@@ -1,0 +1,42 @@
+Determining if files usbhid.h exist failed with the following output:
+Change Dir: /home/mrowl/Desktop/teamproject/dif/src/libdraw/freeglut-3.0.0/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_99b20/fast"
+/usr/bin/make -f CMakeFiles/cmTC_99b20.dir/build.make CMakeFiles/cmTC_99b20.dir/build
+make[1]: вход в каталог «/home/mrowl/Desktop/teamproject/dif/src/libdraw/freeglut-3.0.0/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_99b20.dir/HAVE_USBHID_H.c.o
+/usr/bin/cc   -Wall -pedantic    -o CMakeFiles/cmTC_99b20.dir/HAVE_USBHID_H.c.o   -c /home/mrowl/Desktop/teamproject/dif/src/libdraw/freeglut-3.0.0/CMakeFiles/CheckIncludeFiles/HAVE_USBHID_H.c
+/home/mrowl/Desktop/teamproject/dif/src/libdraw/freeglut-3.0.0/CMakeFiles/CheckIncludeFiles/HAVE_USBHID_H.c:2:10: fatal error: usbhid.h: Нет такого файла или каталога
+ #include <usbhid.h>
+          ^~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_99b20.dir/build.make:66: CMakeFiles/cmTC_99b20.dir/HAVE_USBHID_H.c.o] Ошибка 1
+make[1]: выход из каталога «/home/mrowl/Desktop/teamproject/dif/src/libdraw/freeglut-3.0.0/CMakeFiles/CMakeTmp»
+make: *** [Makefile:126: cmTC_99b20/fast] Ошибка 2
+
+Source:
+/* */
+#include <usbhid.h>
+
+
+int main(void){return 0;}
+
+Determining if the function XParseGeometry exists failed with the following output:
+Change Dir: /home/mrowl/Desktop/teamproject/dif/src/libdraw/freeglut-3.0.0/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b9d8b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b9d8b.dir/build.make CMakeFiles/cmTC_b9d8b.dir/build
+make[1]: вход в каталог «/home/mrowl/Desktop/teamproject/dif/src/libdraw/freeglut-3.0.0/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_b9d8b.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -pedantic -DCHECK_FUNCTION_EXISTS=XParseGeometry   -o CMakeFiles/cmTC_b9d8b.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_b9d8b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b9d8b.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -pedantic -DCHECK_FUNCTION_EXISTS=XParseGeometry    -rdynamic CMakeFiles/cmTC_b9d8b.dir/CheckFunctionExists.c.o  -o cmTC_b9d8b -lm 
+/usr/bin/ld: CMakeFiles/cmTC_b9d8b.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `XParseGeometry'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_b9d8b.dir/build.make:87: cmTC_b9d8b] Ошибка 1
+make[1]: выход из каталога «/home/mrowl/Desktop/teamproject/dif/src/libdraw/freeglut-3.0.0/CMakeFiles/CMakeTmp»
+make: *** [Makefile:126: cmTC_b9d8b/fast] Ошибка 2
+
+
