@@ -1,0 +1,2 @@
+all: triancle.cc
+	gcc 

@@ -1,5 +1,6 @@
 #ifndef _ACTIONS_H_
 #define _ACTIONS_H_
+#include <stdint.h>
 
 typedef enum{
     _move,   //move to point

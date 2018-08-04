@@ -10,9 +10,9 @@ typedef struct{
 typedef struct client{
 	uint16_t x;
 	uint16_t y;
-	VECTOR range;
+	uint16_t range;
 	VECTOR speed;
-	uint16_t sup_speed;//ускорение
+	VECTOR acceleration;//ускорение
 } CLIENT;
 
 typedef struct{
@@ -22,14 +22,14 @@ typedef struct{
 }DYNAMIC_LIST;
 
 void add_client(DYNAMIC_LIST* list, CLIENT* cl){
-	if(count >= data_len){
+	if(list->count >= list->data_len){
 		list->data_len += mem_up_size;
 		list->array = realloc(list->array, list->data_len * sizeof(CLIENT*));
 	}
 	list->array[list->count++] = cl;
 }
 
-void delete_client(DYNAMIC_LIST* list, uint4_t index){
+void delete_client(DYNAMIC_LIST* list, uint32_t index){
 	//TODO: проверка на rangeout
 	free(list->array[index]);
 	for(int i = index; i < list->count - 1; i++)
@@ -45,4 +45,4 @@ typedef struct{
 	uint16_t count;
 	uint16_t data_len;
 	_ACTIONS* array;//array of pointers
-}
+} VECTOR_ACTIONS;
